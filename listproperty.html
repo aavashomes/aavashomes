@@ -1,0 +1,84 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>List Your Property</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- update the version number as needed -->
+ <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-storage.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-database.js"></script>
+	<script src="app.js"></script>
+	<script src="upload.js"></script>
+
+
+</head>
+<style>
+
+	.wrap-contact100
+	{
+		text-align: center;
+		border-bottom: 4px;
+	}
+	.input100
+	{
+		width:210px;height:30px
+	}
+
+
+</style>
+<body>
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action ="" method="post" enctype="multipart/form-data" >
+				<span class="contact100-form-title">
+					Fill The Form <br>
+					<progress value="0" id="uploader" max="100">0%</progress><br><br>
+				</span>
+
+				<label class="label-input100" for="first-name">Tell us your name *</label>
+				<div class="wrap-input100  validate-input" data-validate="Type first name">
+					<input class="input100" type="text" name="name" id="name" placeholder="Name..">
+					<span class="focus-input100"></span>
+				</div>
+				<label class="label-input100" for="first-name">Enter Your Mobile *</label>
+				<div class="wrap-input100  validate-input" data-validate="Type first name">
+					<input class="input100" type="text" name="mobile" id="mob"  placeholder="Mobile ...">
+					<span class="focus-input100"></span>
+				</div>
+				
+
+				<label class="label-input100" for="email">Enter your email *</label>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input id="email" class="input100" type="text" name="email"id="email" placeholder="Eg. example@email.com">
+					<span class="focus-input100"></span>
+				</div>
+                    
+                	<label class="label-input100" for="first-name">Enter Complete Address *</label>
+				<div class="wrap-input100  validate-input" data-validate="Type first name">
+					<input class="input100" type="text" name="address" id="pass" placeholder="H.N / STREET / CITY">
+					<span class="focus-input100"></span>
+				</div>
+                
+
+				<label class="label-input100" for="message">Message *</label>
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<textarea class="input100" name="message" id="rules" placeholder="Write us a message"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+                    <br>
+                    <input type="file" id="file1" multiple="" name="file1"  accept="images/*"><br><br> 
+				<div class="container-contact100-form-btn">
+						<button id="submit_link"type="submit"style="width:100px;height:30px" onclick=" getfile()"name="button">Save</button>
+				</div>
+			</form>
+
+
+
+</body>
+</html>

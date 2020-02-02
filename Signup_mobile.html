@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>aavashomes.in</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="aavas/a4.jpg" style="border-radius:50%">
+	<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+<a href="aavas_mark1.html"><img src="aavas/a4.jpg"style="width:150px;;border-radius:50%;" ></a></img>
+<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+		apiKey: "AIzaSyDJEaT4VliwgO3tMAfrwktXD6TQc9fN60w",
+		authDomain: "aavashomes.firebaseapp.com",
+		databaseURL: "https://aavashomes.firebaseio.com",
+		projectId: "aavashomes",
+		storageBucket: "aavashomes.appspot.com",
+		messagingSenderId: "416827212266",
+		appId: "1:416827212266:web:1148e3a34a848b5d9ab293",
+		measurementId: "G-Q03PT4Z9B4"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+
+	<style>
+		div.scrollmenu {
+		  background-color: #17202A;
+		  overflow: auto;
+		  white-space: nowrap;
+		}
+		
+		div.scrollmenu a {
+		  display: inline-block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px;
+		  text-decoration: none;
+		}
+		
+		div.scrollmenu a:hover {
+		  background-color: #17202A;
+		}
+		 a.active {
+	  background-color: #2196F3;
+	  color: white;
+	}
+		</style>
+</head>
+<body>
+  <br>
+	<div class="scrollmenu">
+		<a  href="s.html" style=" font-family: 'Alegreya SC'">Home</a>
+		<a href="room.html" style=" font-family: 'Alegreya SC'"> Rooms</a>
+		<a href="hostels.html" style=" font-family: 'Alegreya SC'">Hostel</a>
+		<a href="about.html" style=" font-family: 'Alegreya SC'">About</a>
+		<a href="contact.html" style=" font-family: 'Alegreya SC'">Support</a>
+		<a href="http://applewithcoffee.blogspot.com" style=" font-family: 'Alegreya SC'">Blog</a>
+	   
+		<a href="#partners" style=" font-family: 'Alegreya SC'">Partners</a>
+		
+	  </div>
+
+<!--<input type="text" id="email" placeholder="email"> </input><br>
+<input type="text" id="pass" placeholder="pass"> </input><br>
+<button onclick="handlesignup();">Signup</button><br>
+<button onclick="userlogin();">LOGIN</button>-->
+<script src="login.js"></script>
+<div class="center">
+	<div class="btns">
+	<a class="a1" href="#" style="font-size: 20px;">Sign up</a>
+	<a class="a2" href="#" style="font-size: 20px;">Log in</a>			
+	</div>
+	<div class="signup-form">
+	<div class="header">aavashomes.in</div>
+	<form action="">
+	<input type="text" placeholder="Name ....." id="name" ><br><br>
+	<input class="text" type="text" placeholder="Mobile ...." id="mob" >	
+	<input class="email" type="text" placeholder="Email ....." id="email" >	
+	<input class="email" type="password" placeholder="Password ....." id="pass">
+	<input class="sign-sub" type="submit" value="Signup" onclick="writeuser();">
+	</form>
+    </div>
+    <div class="login-form">
+	<div class="header header1">aavashomes.in</div>
+	<form action="">
+        <input type="text" placeholder="Name ....." id="name1" ><br><br>
+	<input class="email" id="email1" type="email" placeholder="Email ">	
+	<input class="email" type="password" id="pass1" placeholder="Password"> 
+	<input class="log-sub" type="submit" value="Login" onclick="checkuser();">
+	</form>
+    </div>
+	</div>
+	<script src="script.js"></script>
+
+
+
+</body>
+</html>

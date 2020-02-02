@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<title>LOGIQUICK</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="shortcut icon" href="tr.jpg">
+<h3 style="font-size:15px;color:white;float:right;border-radius:50%;">+91-7000400121</h3>
+<img src="24.jpg" style="float:right;width:40px; border-radius: 50%;width: 40px;"></img>
+<body>
+<style>
+body{
+background-color:white}
+overflow :auto;
+	  overflow-y: auto;
+
+</style>
+<style>
+div1 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+</style>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button">LOG-IN AS DRIVER</a>
+  <a href="#" class="w3-bar-item w3-button">BOOKING</a>
+  <a href="#" class="w3-bar-item w3-button">TRUCKS</a>
+  <a href="#" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#" class="w3-bar-item w3-button">LOG-IN AS CUSTOMER</a>
+</div>
+
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">MENU</button>
+  <div class="w3-container">
+    <h1 style="font-style:italic;text-align:center"><u>LOGIQUICK</u></h1>
+  </div>
+</div>
+
+<style>
+.navbar {
+    overflow: hidden;
+    background-color:#99A3A4;
+    font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color:black;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color:black;
+    padding: 14px 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:#DA2F14  ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 14px 18px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color:#FEB10C;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+
+<br><br>
+ <div class="navbar">
+	
+	<div class="dropdown">
+	<button class="dropbtn" >TRUCKS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a style="font-style:italic;color:black" href="room.html">PIPLANI</a>
+      <a style="font-style:italic" href="#">ANAND NAGAR</a>
+      <a style="font-style:italic"" href="#">M.P NAGAR</a>
+	  <a style="font-style:italic;" href="#">AYODHA BYPASS</a>
+	  <a style="font-style:italic;" href="#">KALPANA NAGAR</a>
+	  </div>
+  </div>  
+	<a href="hostels.html" style="color:black";>HOSTELS</a>
+	
+     <a href="http://applewithcoffee.blogspot.com/" target="_blank" style="color:black";>BLOG</a>
+	<a href="image.html"style="color:black" target="_blank" ;>IMAGES GALLERY</a>
+	<div class="dropdown">
+	<button class="dropbtn">CITY
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	
+      <a style="font-style:italic"href="#">Bhopal</a>
+      <a style="font-style:italic"href="#">Indore</a>
+      <a style="font-style:italic"href="#">Mumbai</a>
+	  <a style="font-style:italic"href="#">Kolkata</a>
+	  <a style="font-style:italic"href="#">Hyderabad</a>
+	   </div>
+  </div> 
+</div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+<br><br><br><br>
+<section>
+<h2 style="text-align:center">-----------HOW IT WORKS ?-------------</H2><br><br><br>
+<div class="align">
+<div class="row">
+  <div class="column">
+    <h5>Book Your Truck 
+Through Website/App/Call center</h5>
+    <img src="15.png" alt="Nature" style="width:30%" "></img>
+  </div>
+  <div class="column">
+   <h5> Our System Finds 
+Nearest Truck For You
+</h5>
+    <img src="16.png" alt="Snow" style="width:30%" ">
+  </div>
+  <div class="column">
+   <h5>Get updates and notifications
+via SMS & Email</h5>
+    <img src="17.png" alt="Mountains" style="width:30%">
+  </div></div>
+</section>
+<br><br><br><br><br>
+</section><br><br><br><br>
+<style>
+.align{
+text-align:center;
+float:center;
+background-color:#17202A}</style>
+<style>
+h5{color:white;}</style>
+
+<section>
+<h2 style="text-align:center">-----------WHY CHOOSE LOGIQUICK FOR DELIVERY, MOVING AND HAULING?-------------</H2><br><br><br>
+<div class="align">
+<div class="row">
+  <div class="column">
+    <h5>Deliveries in less than an hour</h5>
+    <img src="19.png" alt="Nature" style="width:30%" "></img>
+  </div>
+  <div class="column">
+   <h5>Save money
+</h5>
+    <img src="20.png" alt="Snow" style="width:30%" ">
+  </div>
+  <div class="column">
+   <h5>Hassle free delivery</h5>
+    <img src="21.png" alt="Mountains" style="width:30%">
+  </div>
+</div></div>
+</section>
+<br><br><br><br><br>
+</section><br><br><br><br>
+<style>
+pre{
+font-size:20px;
+ background-color:black;
+ color:white;
+ text-align:center;
+ font-style:italic;
+ width:95%;
+ float:center;
+ margin-left:auto;
+ margin-right:auto;
+ }
+ p{
+ font-size:16px;
+ background-color:#17202A;
+ color:white;
+ text-align:center;
+ float:center;
+ float-style:georgian;
+ overflow:auto;
+ width:80%;
+  margin-left:auto;
+ margin-right:auto;
+}</style>
+<section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<pre><br><u>ABOUT US</u><br>
+</pre>
+<p><br><br>when we go to other city for any purpose<br>
+Business , Meeting , Education <br>
+It is very difficult for us to survive in that city<br>
+Because we dont know anything about that city<br>
+and we have only one choice left<br>
+wandering to the roads and find "TO Let" boards and "FOR RENT " boards<br>
+I have also faced this problem<br>
+AND i want to solve it <br>
+And I create AAVAS <br>
+AAVAS is the website in which you only type your location<br>
+And AAVAS helps you in every city and show Rooms, Hostels, Hotels <br><br><br>
+</p>
+<br>
+<br>
+
+
+</section>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 350px;
+  padding: 10px;
+  background-color: white;
+  height:650px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+<style> 
+.footer {
+   position:relative;
+   left: 0;
+   bottom: 1;
+   width:100%;
+   height:230px;
+   background-color:#17202A;
+   color: black;
+   text-align: center;
+   overflow :visible;
+   margin-top:-40px;
+   font-style:georgian;
+   h5{
+   font-style:italic;
+}
+</style>
+<button class="open-button" onclick="openForm()">Booking</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.html" class="form-container">
+    <h1>Booking</h1>
+    <label for="email"><b>Name</b></label>
+    <input type="text" placeholder="Enter Full Name..." name="email" required>
+
+    <label for="email"><b>Mobile</b></label>
+    <input type="text" placeholder="Enter Mobile..." name="email" required>
+
+    <label for="psw"><b>Pick up Location</b></label>
+    <input type="password" placeholder="Enter Pick up Location.." name="psw" required>
+     <label for="psw"><b>Drop up Location</b></label>
+    <input type="password" placeholder="Enter Drop Up location.." name="psw" required>
+	<input type="checkbox" name="vehicle1" value="Truck"><b>Truck</b><br>
+  <input type="checkbox" name="vehicle2" value="Ace"><b>Maruti Ace</b><br>
+  <input type="checkbox" name="vehicle3" value="Loading Truck" checked><b> Loading Truck</b>
+
+    <button type="submit" class="btn">Book</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<div class="footer">
+  <h5 style="font-size:17px;font-family:georgian;color:white"><br>LOGIQUICK<br><?php echo "<p>Copyright &copy; 2018 All Right Reserverd </P>
+  <br><br><h6style="color:white">www.aavashomes@gmail.com<br> +91-7000400121</h6>
+<a href="https://www.facebook.com/AAVAShomes/" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="www.aavashomes@gmail.com" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="https://www.instagram.com/_aavas_/?hl=en" class="fa fa-instagram"></a>
+
+
+  </div>
+</html> 
